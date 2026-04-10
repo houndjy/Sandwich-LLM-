@@ -5,7 +5,7 @@ import os
 # ==========================================
 # Configuration: Replace with your details
 # ==========================================
-PAID_API_KEY = "your-paid-api-key-here"
+PAID_API_KEY = os.getenv("PAID_API_KEY", "your-paid-api-key-here")
 PAID_API_URL = "https://api.anthropic.com/v1/messages" # Example: Anthropic endpoint
 LOCAL_LLM_URL = "http://127.0.0.1:1234/v1/chat/completions" # Example: LM Studio endpoint
 PROJECT_DIR = "./sample_project_folder"
